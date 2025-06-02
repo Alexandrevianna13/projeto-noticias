@@ -60,6 +60,11 @@ body.menu-open::before {
     padding: 1.5rem;
     gap: 1.5rem;
     
+    transition: 0.7s;
+}
+
+.header-mobile nav.abrir {
+    right: 0;
 }
 
 .header-mobile nav button {
