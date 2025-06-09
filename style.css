@@ -47,6 +47,7 @@ body.menu-open::before {
     border: none;
     background: none;
     width: fit-content;
+    cursor: pointer;
 }
 
 .header nav.mobile {
@@ -81,6 +82,10 @@ body.menu-open::before {
     color: var(--dark-blue);
     font-size: 1.125rem;
     line-height: 1.5rem;
+}
+
+header .desktop {
+    display: none;
 }
 
 main {
@@ -184,6 +189,10 @@ main {
     margin-block: 0.6rem;
 }
 
+.terceira-seçao a {
+    text-decoration: none;
+}
+
 .terceira-seçao p {
     font-size: 0.9375rem;
     line-height: 1.625rem;
@@ -191,36 +200,6 @@ main {
 }
 
 @media(min-width: 1110px) {
-main {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 1.75rem;
-}
-
-.primeira-seçao {
-    grid-column: 1 / 3;{
-
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 1.75rem;
-}
-
-.primeira-seçao picture {
-    grid-column: 1 / 3;
-}
-
-.primeira-seçao img {
-    margin: 0;
-}
-
-.primeira-seçao h1 {
-    font-size: 3.5rem;
-}
-
-.segunda-seçao h2 {
-    font-size: 2.5rem;
-}
-
     header > button {
         display: none;
     }
@@ -235,6 +214,55 @@ main {
         line-height: 1.625rem;
         text-decoration: none;
         color: var(--gun-metal);
+    }
+
+
+    header .desktop a:hover {
+        color: var(--vermilian);
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1.75rem;
+    }
+    
+    .primeira-seçao {
+        grid-column: 1 / 3;{
+    
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.75rem;
+    }
+    
+    .primeira-seçao picture {
+        grid-column: 1 / 3;
+    }
+    
+    .primeira-seçao img {
+        margin: 0;
+    }
+    
+    .primeira-seçao h1 {
+        font-size: 3.5rem;
+    }
+
+    .primeira-seçao button:hover {
+        background-color: var(--dark-blue);
+        cursor: pointer;
+    }
+    
+    .segunda-seçao h2 {
+        font-size: 2.5rem;
+    }
+
+    .terceira-seçao {
+        display: flex;
+        grid-column: 1 / 4;
+    }
+
+    .terceira-seçao h2:hover {
+        color: var(--vermilian);
     }
 }
   }
