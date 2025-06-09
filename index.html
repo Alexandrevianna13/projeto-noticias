@@ -11,30 +11,42 @@
   <script src="./main.js" defer></script>
 </head>
 <body class="menu-open">
-  <header class="header-mobile">
+  <header >
     <img src="./noticias_base/assets/images/logo.svg" alt="Logo do site de noticias W.">
 
     <button>
       <img src="./noticias_base/assets/images/icon-menu.svg" alt="icone do menu hamburguer">
     </button>
 
-    <nav>
+    <nav class="header-mobile">
       <button>
         <img src="./noticias_base/assets/images/icon-menu-close.svg" alt="icone de x para fechar o menu">
       </button>
+      
+      <a href="#">Home</a>
+      <a href="#">Novo</a>
+      <a href="#">Popular</a>
+      <a href="#">Trending</a>
+      <a href="#">Categorias</a>
+    </nav>
 
-      <a href="Home"></a>
-      <a href="Novo"></a>
-      <a href="Popular"></a>
-      <a href="Trending"></a>
-      <a href="Categorias"></a>
+    <nav class="desktop">
+      <a href="#">Home</a>
+      <a href="#">Novo</a>
+      <a href="#">Popular</a>
+      <a href="#">Trending</a>
+      <a href="#">Categorias</a>
     </nav>
   </header>
 
 
   <main>
-    <section class="primeira-seçao">
-      <img src="./noticias_base/assets/images/image-web-3-mobile.jpg" alt="icone de puzzle colorido">
+    <section class="primeira-seçao"> srcset="./noticias_base/assets/images/image-web-3"
+      <picture>
+        <source media="(min-width: 1000px)"
+        <img src="./noticias_base/assets/images/image-web-3-mobile.jpg" alt="icone de puzzle colorido">
+      </picture>
+      
       <h1>O futuro brilhante da web 3.0</h1>
       <p>Nos mergulhamos na proxima evolução da web que afirma devolver o poder das plataformas para as mãos das pessoas. Mas sera que elaa realmente esta cumprindo sua promessa? </p>
       <button>Ler mais</button>
