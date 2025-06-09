@@ -198,8 +198,27 @@ main {
 }
 
 .primeira-seçao {
+    grid-column: 1 / 3;{
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.75rem;
+}
+
+.primeira-seçao picture {
     grid-column: 1 / 3;
 }
+
+.primeira-seçao img {
+    margin: 0;
+}
+
+.primeira-seçao h1 {
+    font-size: 3.5rem;
+}
+
+.segunda-seçao h2 {
+    font-size: 2.5rem;
 }
 
     header > button {
@@ -218,3 +237,4 @@ main {
         color: var(--gun-metal);
     }
 }
+  }
