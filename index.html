@@ -1,111 +1,118 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-  <title>W. noticias</title>
-  <link href='/style.css' rel='stylesheet'>
-  <script src="./main.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="./script.js" defer></script>
+    <title>W. Notícias</title>
 </head>
-<body class="menu-open">
-  <header >
-    <img src="./noticias_base/assets/images/logo.svg" alt="Logo do site de noticias W.">
+<body>
+    <header>
+        <img src="assets/images/logo.svg" alt="Logo do site de notícias W.">
 
-    <button>
-      <img src="./noticias_base/assets/images/icon-menu.svg" alt="icone do menu hamburguer">
-    </button>
+        <button>
+            <img src="assets/images/icon-menu.svg" alt="ícone do menu hamburguer">   
+        </button>
 
-    <nav class="header-mobile">
-      <button>
-        <img src="./noticias_base/assets/images/icon-menu-close.svg" alt="icone de x para fechar o menu">
-      </button>
+        <nav class="mobile">
 
-      <a href="#">Home</a>
-      <a href="#">Novo</a>
-      <a href="#">Popular</a>
-      <a href="#">Trending</a>
-      <a href="#">Categorias</a>
-    </nav>
+            <button>
+                <img src="assets/images/icon-menu-close.svg" alt="icone de X para fechar o menu">
+            </button>
 
-    <nav class="desktop">
-      <a href="#">Home</a>
-      <a href="#">Novo</a>
-      <a href="#">Popular</a>
-      <a href="#">Trending</a>
-      <a href="#">Categorias</a>
-    </nav>
-  </header>
+            <a href="#">Home</a>
+            <a href="#">Novo</a>
+            <a href="#">Popular</a>
+            <a href="#">Trending</a>
+            <a href="#">Categorias</a>
+        </nav>
 
+        <nav class="desktop">
 
-  <main>
-    <section class="primeira-seçao"> srcset="./noticias_base/assets/images/image-web-3"
-      <picture>
-        <source media="(min-width: 1000px)"
-        <img src="./noticias_base/assets/images/image-web-3-mobile.jpg" alt="icone de puzzle colorido">
-      </picture>
-      
-      <h1>O futuro brilhante da web 3.0</h1>
-     <div>
+            <a href="#">Home</a>
+            <a href="#">Novo</a>
+            <a href="#">Popular</a>
+            <a href="#">Trending</a>
+            <a href="#">Categorias</a>
 
-      <p>Nos mergulhamos na proxima evolução da web que afirma devolver o poder das plataformas para as mãos das pessoas. Mas sera que elaa realmente esta cumprindo sua promessa? </p>
-     </div>
-      <button>Ler mais</button>
-    </section>
+        </nav>
+    </header>
 
-    <section class="segunda-seçao">
-      <h2>Novo</h2>
+    <main>
+        <section class="primeira-secao">
 
-     <div class="margin-border-padding">
-      <h3>Hidrogenio VS Carros eletricos</h3>
-      <p>Os carros movidos a Hidrogenio alguma vez alcançarão os veiculos eletricos?</p>
-     </div>
-     <div class="margin-border-padding">
-      <h3>A arte gerada por IA</h3>
-      <p>Quais são os possiveis efeitos adversos da geraçao por IA sob demanda?</p>
-     </div>
-     <div class="margin-border-padding">
-      <h3>O VC Fuding esta esgotado?</h3>
-      <p>O financiamento privado por empresas de capital risco caiu 50%.</p>
-     </div>
-    </section>
+            <picture>
+                <source media="(min-width: 700px)" srcset="./assets/images/image-web-3-desktop.jpg">
+                <img src="assets/images/image-web-3-mobile.jpg" alt="ícone de puzzle colorido">
+            </picture>
+            
 
-    <section class="terceira-seçao">
-      <div>
-        <img src="./noticias_base/assets/images/image-retro-pcs.jpg" alt="imagem de computadores antigos">
+            <h1>O futuro brilhante da Web 3.0?</h1>
 
-        <div>
-          <strong>01</strong>
-         <a href="#"> 
-          <h2>Revivendo PCs antigos</h2>
-        </a>
-          <p>E se esses PCs pudessem receber peças modernas?</p>
-        </div>
-      </div>
+            <div>
+                <p>Nós mergulhamos na próxima evolução da web que afirma devolver o poder das plataformas para as mãos das pessoas. Mas será que ela realmente está cumprindo sua promessa?</p>
+                <button>Ler Mais</button>
+            </div>
+        </section>
+        
+        <section class="segunda-secao">
+            <h2>Novo</h2>
 
-      <div>
-        <img src="./noticias_base/assets/images/image-top-laptops.jpg" alt="imagem de laptop">
-        <div>
-          <strong>02</strong>
-          <a href="#">
-            <h2>Top 10 Laptops de 2024</h2>
-          </a>
-          <p>Nossas melhores escolhas para diversas necessidades.</p>
-        </div>
-      </div>
-      <div>
-        <img src="./noticias_base/assets/images/image-gaming-growth.jpg" alt="imagem de um comtrole de videogame">
-        <div>
-          <strong></strong>
-          <a href="#">
-            <h2>O crescimento dos Jogos</h2>
-          </a>
-          <p>Como a pandemia tem gerado novas oportunidades.</p>
-        </div>
-      </div>
-    </section>
-  </main>
+            <div class="margin-border-padding">
+                <h3>Hidrogênio VS Carros Elétricos</h3>
+                <p>Os carros movidos a hidrogênio alguma vez alcançarão os veículos elétricos?</p>
+            </div>
+
+            <div class="margin-border-padding">
+                <h3>A arte gerada por IA</h3>
+                <p>Quais são os possíveis efeitos adversos da geração de imagens por IA sob demanda?</p>
+            </div>
+
+            <div>
+                <h3>O VC Funding está esgotado?</h3>
+                <p>O financiamento privado por empresas de capital de risco caiu 50%.</p>
+            </div>
+        </section>
+
+        <section class="terceira-secao">
+            <div>
+                <img src="assets/images/image-retro-pcs.jpg" alt="computadores antigos">
+
+                <div>
+                    <strong>01</strong>
+                    <a href="#">
+                        <h2>Revivendo PCs antigos</h2>
+                    </a>
+                    <p>E se PCs antigos pudessem receber peças modernas?</p>
+                </div>
+            </div>
+
+            <div>
+                <img src="assets/images/image-top-laptops.jpg" alt="laptop">
+                <div>
+                    <strong>02</strong>
+                    <a href="#">
+                        <h2>Top 10 Laptops de 2022</h2>
+                    </a>
+                    <p>Nossas melhores escolhas para diversas necessidades.</p>
+                </div>
+            </div>
+            <div>
+                <img src="assets/images/image-gaming-growth.jpg" alt="controle de video game">
+                <div>
+                    <strong>03</strong>
+                    <a href="#">
+                        <h2>O Crescimento dos Jogos</h2>
+                    </a>
+                    <p>Como a pandemia tem gerado novas oportunidades.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
 </body>
 </html>
